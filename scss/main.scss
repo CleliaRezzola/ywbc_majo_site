@@ -1,0 +1,33 @@
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans|Julius+Sans+One|Comfortaa);
+@import "variables";
+@import "mixins";
+@import "content";
+
+.container {
+	max-width: 960px;
+}
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    font-size:0;
+}
+ 
+.clearfix {
+    display: inline-block;
+}
+ 
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+
+article {
+	@extend.clearfix;
+}
